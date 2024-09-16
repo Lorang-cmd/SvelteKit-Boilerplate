@@ -4,6 +4,7 @@
   import { scrollDirection } from '$lib/scroll/scroll-direction';
   import { scrollMinimum } from '$lib/scroll/scroll-minimum';
   import { scrollIntersection } from '$lib/scroll/scroll-intersection';
+  import Gdpr from '$lib/gdpr/Gdpr.svelte';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
   onMount(async () => {
@@ -51,17 +52,9 @@
     console.log('Site by Author - https://Author/');
   }
 
-  import Gdpr from '$lib/gdpr/Gdpr.svelte';
-
 </script>
 <Gdpr />
 <slot /> 
-
-
-
-<!--
-<h2 class="target page-heading__title " style="--line-total: 1;" data-scroll data-splitting="words" data-text-animation="slidein-by-lines">Modular cabins for simple, sustainable <span class="title-highlight__word title-highlight --font-heading --fs-italic words chars splitting" data-splitting="chars">living</span></h2>
--->
 
 
 
