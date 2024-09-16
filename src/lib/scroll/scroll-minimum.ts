@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
-const SCROLL_MINIMUM = 0; // Adjust this value as needed
+const SCROLL_MINIMUM = 0;
 const SCROLL_MINIMUM_CLASSNAME = '--js-scroll-min';
 
 function createScrollMinimumStore() {
